@@ -1,35 +1,55 @@
-# Node modules (frontend)
-frontend/node_modules/
-frontend/.next/
-frontend/.env
+# ========== FRONTEND ==========
+# node modules, Vite cache, build artifacts
+/frontend/node_modules/
 frontend/dist/
-frontend/build/
+frontend/.vite/
+frontend/.DS_Store
 
-# Python venv (backend)
-backend/venv/
-backend/__pycache__/
-backend/.env
-backend/.DS_Store
+# local env & config
+/frontend/.env
+/frontend/.env.local
+/frontend/.env.development
+/frontend/.env.production
+/frontend/.env.test
 
-# PyCharm / VSCode settings (optional)
-.idea/
-.vscode/
+# log files
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
 
-# OS 파일
-.DS_Store
-Thumbs.db
+# system files
+/frontend/.vscode/
+frontend/coverage/
 
-# Logs
-*.log
-
-# env / secrets
-.env
-.env.*
-
-# Byte-compiled / cache
+# ========== BACKEND ==========
+# python cache & virtualenv
+/backend/__pycache__/
+/backend/*.py[cod]
+/backend/env/
+/backend/venv/
+/backend/venv*/   # e.g. venv3.11
+/backend/.DS_Store
 __pycache__/
-*.py[cod]
-*.so
+**/__pycache__/
 
-# macOS Finder metadata
-*.DS_Store
+# python project build
+/backend/build/
+/backend/dist/
+/backend/*.egg-info/
+/backend/.pytest_cache/
+/backend/.mypy_cache/
+/backend/.ipynb_checkpoints/
+
+# local env & secrets
+/backend/.env
+/backend/secrets.env
+/backend/.vscode/
+
+# ========== GENERAL ==========
+.DS_Store
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.orig
